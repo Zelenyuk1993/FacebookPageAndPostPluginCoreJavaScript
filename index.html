@@ -8,45 +8,53 @@
 </head>
 
 <body>
+   
+   
+    <div class="plagin-form-wrap">
 
-<!-- The Form Plagin -->
-    <form class="formPlagin">
-        <div class="animate-switch-container">
-            <label>
-                <input checked type='radio' value="Post" id="Post" name='inputForm' onclick="checkPlagin()" />Embedded Post</label>
-            <label class="inputForm">
-                <input type='radio' value="Page" id="Page" name='inputForm' onclick="checkPlagin()" />Page Plugin</label>
-            <div class="ambedded-Post" id="ambedded-Post">
-                <label>Facebook Post URL</label>
-                <input type="text" class="form-control" id="postUrl" />
-                <div class="btGetCodePost">
-                    <a onclick="getCodePost()" id="getCodePost">Get Code</a>
-                </div>
-            </div>
-            <div class="page-Plugin" id="page-Plugin" style="display:none">
-                <div class="form-group">
-                    <label>Facebook Page URL</label>
-                    <input type="text" class="form-control" value="" id="pageUrl" />
-                </div>
-                <div class="checkboxPageForm">
-                    <label>
-                        <input type="checkbox" id="ShowFriend’sFace" />Show Friend’s Face</label>
-                    <br>
-                    <label>
-                        <input type="checkbox" id="UseSmallHeader" />Use Small Header</label>
-                    <br>
-                    <label>
-                        <input type="checkbox" id="HideCoverPhoto" />Hide Cover Photo</label>
-                    <br>
-                    <label>
-                        <input type="checkbox" id="ShowPagePost" />Show Page Post</label>
-                </div>
-                <div class="btGetCodePage">
-                    <a onclick="getCodePage()" id="getCodePage">Get Code</a>
-                </div>
+            <img class="iconPageFacebook" src="http://detroitpriest.com/wp-content/uploads/2016/02/icon_facebook.png" >
+            <h1 class="plagin-form-wrap-h1">Facebook Plugins</h1>
+
+
+        <input class="inputRadio" checked type='radio' value="Post" id="Post" name='inputForm' onclick="checkPlagin()" />
+        <label class="label" for="Post">Post Plugin</label>
+        <input class="inputRadio" type='radio' value="Page" id="Page" name='inputForm' onclick="checkPlagin()" />
+        <label class="label" for="Page">Page Plugin</label>
+
+
+        <div class="ambedded-Post" id="ambedded-Post">
+            <input type="text" class="form-control" id="postUrl" placeholder="Facebook Post URL" />
+            <div class="blue btGetCodePost" onclick="getCodePost()">
+                <a id="getCodePost">Get Code</a>
             </div>
         </div>
-    </form>
+
+
+
+        <div class="page-Plugin" id="page-Plugin" style="display:none">
+            <div class="form-group">
+                <input type="text" class="form-control" value="" id="pageUrl" placeholder="Facebook Page URL" />
+            </div>
+            
+            <div class="checkboxPageForm">
+                <input type="checkbox" id="ShowFriend’sFace" />
+                <label class="checkboxFont">Show Friend’s Face</label>
+                <br>
+                <input type="checkbox" id="UseSmallHeader" />
+                <label class="checkboxFont">Use Small Header</label>
+                <br>
+                <input type="checkbox" id="HideCoverPhoto" />
+                <label class="checkboxFont">Hide Cover Photo</label>
+                <br>
+                <input type="checkbox" id="ShowPagePost" />
+                <label class="checkboxFont">Show Page Post</label>
+            </div>
+            
+            <div class="blue btGetCodePage" onclick="getCodePage()">
+                <a id="getCodePage">Get Code</a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -54,8 +62,11 @@
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <div class="modal-stepOne">
+              <div class="modal-header">
                 <span class="close" onclick="closeGetCode()">×</span>
+                <h1 class="modal-header-text">Modal Code</h1>
+            </div>
+            <div class="modal-stepOne">
                 <p><strong>Step 1:</strong> Include the SDK JavaScript on your page once, ideally right after the opening <code>&lt;body&gt;</code> tag.</p>
             </div>
             <textarea id="StepOneContent" class="StepOneContent" readonly="1" rows="10" spellcheck="false" onclick="this.focus(); this.select()" dir="ltr" style="direction: ltr;">&lt;div id="fb-root"&gt;&lt;/div&gt; &lt;script&gt;(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));&lt;/script&gt;</textarea>
@@ -67,7 +78,8 @@
             </p>
         </div>
     </div>
-    
+
 </body>
+<script type="text/javascript" src="js/app.js"></script>
 
 </html>
