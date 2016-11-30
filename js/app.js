@@ -1,3 +1,6 @@
+/**
+ * @author Dima Zelenyuk
+ */
 //Function To switch between plugins
 function checkPlagin() {
     var post = document.getElementById('Post');
