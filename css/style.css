@@ -1,0 +1,192 @@
+.formPlagin {}
+
+.animate-switch-container {
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    width: 300px;
+    border: solid 1px black;
+    box-shadow: 6px 6px 15px gray;
+    padding: 10px;
+    border-radius: 5px;
+    background-size: 50px 50px;
+}
+
+.ambedded-Post {
+    padding: 10px;
+    width: 100%;
+}
+
+.page-Plugin {
+    padding: 10px;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 100 !important;
+}
+
+.inputForm {
+    margin-left: 30px;
+}
+
+.checkboxPageForm {
+    margin-top: 20px;
+}
+
+.viewObject {
+    margin-top: 20px;
+}
+
+.form-control {
+    height: 25px;
+    width: 90%;
+}
+
+.btGetCodePost {
+    background: #e0e0e0;
+    height: 20px;
+    width: 75px;
+    cursor: pointer;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 3px;
+    margin-left: 68%;
+    margin-top: 50%;
+}
+
+.btGetCodePage {
+    background: #e0e0e0;
+    height: 20px;
+    width: 75px;
+    cursor: pointer;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 3px;
+    margin-left: 68%;
+    margin-top: 10%;
+}
+
+
+/* The Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    border-radius: 3px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f03939;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-stepOne {
+    padding: 2px 16px;
+}
+
+.modal-stepTwo {
+    padding: 2px 16px;
+}
+
+.StepOneContent {
+    margin-left: 6px;
+    padding: 2px 16px;
+    background: #e0e0e0;
+    box-sizing: border-box;
+    color: #4b4f56;
+    font-family: monospace;
+    font-size: 14px;
+    height: auto;
+    line-height: 20px;
+    width: 98%;
+    height: 224px;
+}
+
+.StepTwoContent {
+    margin-left: 6px;
+    padding: 2px 16px;
+    background: #e0e0e0;
+    box-sizing: border-box;
+    color: #4b4f56;
+    font-family: monospace;
+    font-size: 14px;
+    height: auto;
+    line-height: 20px;
+    width: 98%;
+    height: 150px;
+}
